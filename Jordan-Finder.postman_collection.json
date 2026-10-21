@@ -1,0 +1,57 @@
+{
+  "info": {
+    "name": "Jordan Finder API",
+    "description": "Pruebas básicas para la API local del proyecto Jordan Finder.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Comprobar que la API funciona",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3001/api/health"
+      }
+    },
+    {
+      "name": "Buscar todas las zapatillas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3001/api/sneakers"
+      }
+    },
+    {
+      "name": "Buscar Jordan 1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3001/api/sneakers?search=Jordan%201"
+      }
+    },
+    {
+      "name": "Buscar por color Chicago",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3001/api/sneakers?search=Chicago"
+      }
+    },
+    {
+      "name": "Consultar una zapatilla por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3001/api/sneakers/1"
+      }
+    },
+    {
+      "name": "Probar ID que no existe (404)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3001/api/sneakers/999"
+      }
+    }
+  ]
+}
